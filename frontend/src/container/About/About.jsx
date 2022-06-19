@@ -1,23 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { images } from '../../constants';
-
 import './About.scss';
 import { urlFor, client } from '../../client';
 
-/* const abouts = [
-	{
-		title: 'Analísis Seo',
-		description: 'I check if you have done SEO ',
-		imgUrl: images.about01,
-	},
-	{ title: 'Projecto Seo', description: 'I do SEO', imgUrl: images.about02 },
-	{
-		title: 'Seo Consult',
-		description: 'I tell you how to SEO',
-		imgUrl: images.about03,
-	},
-]; */
+import { AppWrap } from '../../wrapper';
 
 const About = () => {
 	const [abouts, setAbouts] = useState([]);
@@ -55,4 +41,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default AppWrap(About, 'about');
