@@ -109,7 +109,7 @@ const Footer = () => {
 			)}
 
 			<a href="https://www.flaticon.com/free-icons/email" title="email icons">
-				Email icons created by Freepik - Flaticon
+				Icons created by Freepik - Flaticon
 			</a>
 		</>
 	);
